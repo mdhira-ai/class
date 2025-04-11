@@ -5,22 +5,22 @@ To add all files from the include and lib folders to your CMake project, you'll 
 
 
 # Add include directory
-include_directories(${CMAKE_SOURCE_DIR}/include)
+> include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Find all header files in include directory
-file(GLOB HEADER_FILES 
+> file(GLOB HEADER_FILES 
     "${CMAKE_SOURCE_DIR}/include/*.h"
     "${CMAKE_SOURCE_DIR}/include/*.hpp"
 )
 
 # Find all source files in lib directory
-file(GLOB LIB_SOURCE_FILES 
+> file(GLOB LIB_SOURCE_FILES 
     "${CMAKE_SOURCE_DIR}/lib/*.cpp"
     "${CMAKE_SOURCE_DIR}/lib/*.c"
 )
 
 # Update PROJECT_SOURCES to include the new files
-set(PROJECT_SOURCES
+> set(PROJECT_SOURCES
     main.cpp
     mainwindow.cpp
     mainwindow.h
